@@ -14,11 +14,11 @@ def login():
         return '''
         <form action ="/login" method ="post">
             Passwaod: <input type="text"><br>
-            <input type="submit">
+            <input type="submit">K
         </form>
         '''
     if request.method == "POST":
-        return "Loggded in"
+        return "Logged in"
 
     print(request.method)
     return "Login page"
