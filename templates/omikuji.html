@@ -5,10 +5,14 @@
     <title>おみくじ</title>
 </head>
 <body>
-<p>今日の運勢は{{ omikujikekka }}です</p>
+<p>今日の運勢は{{ result }}です</p>
 
-{% if omikujikekka == "大吉" %}
+{% if result == "大吉" %}
 <p>やったね！</p>
+{% elif result == "吉" %}
+<p>まあまあだね。。。</p>
+{% elif result == "凶" %}
+<p>ざまぁ!!</p>
 {% endif %}
 
 </body>
